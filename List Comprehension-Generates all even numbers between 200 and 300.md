@@ -20,8 +20,25 @@ To write a Python class-based program that generates all even numbers between 20
 ---
 
 ## 💻 PROGRAM:
-Add Code Here
+      class program:
+          def __init__(self, a, b, c):
+              self.a = a  
+              self.b = b  
+              self.c = c  
+      
+          def display(self):
+              even_numbers = [i for i in range(self.a, self.c + 1, self.b) if i % 2 == 0]
+              print("Even numbers in the given range:", even_numbers)
+      
+      a = int(input("Enter the lower limit: "))
+      b = int(input("Enter the step value: "))
+      c = int(input("Enter the upper limit: "))
+      
+      obj = program(a, b, c)
+      obj.display()
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/4ef69564-0e55-4aad-b131-e9f2402e1b7e)
 
 ## RESULT:
+The program successfully demonstrates the use of classes, constructors, and list comprehension to display even numbers from a range with a step value.
